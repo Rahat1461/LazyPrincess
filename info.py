@@ -57,8 +57,8 @@ lazy_renamers = [int(lazrenamers) if id_pattern.search(lazrenamers) else lazrena
 LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else [] #Add user id of the user in this field those who you want to be Authentic user for file renaming features
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
 
-QR_CODE_IMG = environ.get('QR_CODE_IMG','https://telegra.ph/file/ca18e2c794f4ea1c3135b.jpg') #add url link of your qr code to recieve money - use telegraph bot or other source to get image
-UPI_ID = environ.get('UPI_ID', 'lazydeveloper@ybl') #enter your upi id here - grab it from your online payment methods.
+QR_CODE_IMG = environ.get('QR_CODE_IMG','') #add url link of your qr code to recieve money - use telegraph bot or other source to get image
+UPI_ID = environ.get('UPI_ID', '') #enter your upi id here - grab it from your online payment methods.
 
 # Others
 TUTORIAL = environ.get('TUTORIAL', '') # Tutorial video link for opening shortlink website 
